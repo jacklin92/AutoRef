@@ -65,7 +65,7 @@ ActionChains(driver).move_to_element(element).pause(random).click().perform()
 ```
 這能有效降低被判定為機器人的機率。
 ### 3. Iframe 切換
-Cloudflare 的驗證按鈕通常藏在`iframe`中。程式內建邏輯會自動搜尋`challenges.cloudflare.com`的框架並切換進去點擊，點擊完後自動切回主文件。
+Cloudflare 的驗證按鈕通常藏在`iframe`中。程式內建邏輯會自動搜尋`challenges.cloudflare.com`的框架並切換進去點擊，點擊完後自動切回主文件。(此功能目前需要修正，還在想辦法解決cloudflare的問題)
 
 ## ❓ 常見問題 (Troubleshooting)
 * Q: 程式啟動時報錯 SessionNotCreatedException？ A: 程式內建了自動修復機制。它會先嘗試自動匹配版本，失敗後會自動重試並指定相容版本。若仍失敗，請更新你的 Google Chrome 至最新版。
