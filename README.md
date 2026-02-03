@@ -58,7 +58,7 @@ Project_Folder/
 ### 1. 驅動程式初始化 (Driver Setup)
 為了避免`RuntimeError: you cannot reuse the ChromeOptions object`，程式採用了工廠模式`get_chrome_options()`。每次重新嘗試啟動`Driver`時，都會生成全新的`Options`物件。
 ### 2. 擬人化點擊 (Human Click)
-不使用傳統的 element.click()，而是使用動作鏈：
+不使用傳統的`element.click()`，而是使用動作鏈：
 
 ```Python
 ActionChains(driver).move_to_element(element).pause(random).click().perform()
