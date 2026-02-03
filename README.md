@@ -1,7 +1,6 @@
 # 📄 AutoRef
 
-這是一個基於 Python 的自動化論文下載工具。它利用 `undetected_chromedriver` 和 `Selenium` 來模擬真人操作，能夠繞過 Cloudflare 驗證（如 ResearchGate、PubMed），並自動將學術文獻下載為 PDF。
-
+這是一個基於 Python 的自動化論文下載工具。它利用 `undetected_chromedriver` 和 `Selenium` 來模擬真人操作，並自動將學術文獻下載為 PDF。
 若無法直接下載 PDF，程式具備「網頁列印 (WebPrint)」的備援機制，確保能保存網頁內容。
 
 ## 🚀 主要特色 (Key Features)
