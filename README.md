@@ -68,9 +68,9 @@ ActionChains(driver).move_to_element(element).pause(random).click().perform()
 Cloudflare 的驗證按鈕通常藏在`iframe`中。程式內建邏輯會自動搜尋`challenges.cloudflare.com`的框架並切換進去點擊，點擊完後自動切回主文件。
 
 ## ❓ 常見問題 (Troubleshooting)
-Q: 程式啟動時報錯 SessionNotCreatedException？ A: 程式內建了自動修復機制。它會先嘗試自動匹配版本，失敗後會自動重試並指定相容版本。若仍失敗，請更新你的 Google Chrome 至最新版。
-Q: 下載的 PDF 只有網頁截圖？ A: 這是「WebPrint」功能。當原始 PDF 下載失敗（例如該論文需要付費，或按鈕被隱藏），程式會將當前看到的網頁內容列印下來，確保你不會空手而歸。
-Q: 遇到 Cloudflare 無限迴圈怎麼辦？ A: 雖然程式有自動過盾邏輯，但若 IP 信譽過低可能無法通過。此時請手動點擊瀏覽器上的驗證框，程式偵測到頁面跳轉後會自動繼續執行。
+* Q: 程式啟動時報錯 SessionNotCreatedException？ A: 程式內建了自動修復機制。它會先嘗試自動匹配版本，失敗後會自動重試並指定相容版本。若仍失敗，請更新你的 Google Chrome 至最新版。
+* Q: 下載的 PDF 只有網頁截圖？ A: 這是「WebPrint」功能。當原始 PDF 下載失敗（例如該論文需要付費，或按鈕被隱藏），程式會將當前看到的網頁內容列印下來，確保你不會空手而歸。
+* Q: 遇到 Cloudflare 無限迴圈怎麼辦？ A: 雖然程式有自動過盾邏輯，但若 IP 信譽過低可能無法通過。此時請手動點擊瀏覽器上的驗證框，程式偵測到頁面跳轉後會自動繼續執行。
 
 ## ⚠️ 免責聲明
 本工具僅供學術研究與個人學習使用。
